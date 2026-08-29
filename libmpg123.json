@@ -1,0 +1,20 @@
+{
+    "name": "libmpg123",
+    "description": "MP3 audio decoder",
+    "filters":["mpg123dec","rfmpg123"],
+    "help": "This filter decodes MPEG-1/2 audio (MP3) files using mpg123.",
+    "support": [
+        "audio"
+    ],
+    "sources":"https://bevara.ddns.net/sources/libmpg123.accessor",
+    "filter_source":{
+        "mpg123dec" : "dec_mpg123.c",
+        "rfmpg123" : "reframe_mpg123.c"
+    },
+    "extension":{
+      "mp3" : "audio",
+      "mp2" : "audio",
+      "mp1" : "audio"
+    },
+    "licence_required":false
+}
