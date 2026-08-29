@@ -1,4 +1,4 @@
-# libflac
+# libmpg123
 This filter decodes MPEG-1.0, MPEG-2.0 et MPEG-2.5 audio files using libmpg123.
 
 ## Requirements
