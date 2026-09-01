@@ -194,7 +194,7 @@ GF_FilterRegister ReframeMpg123Register = {
 	.process = rfmpg123_process,
 	.process_event = rfmpg123_process_event};
 
-const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_mpg123_reframe_register(GF_FilterSession *session)
+const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE mpg123_reframe_register(GF_FilterSession *session)
 {
 	return &ReframeMpg123Register;
 }
@@ -202,5 +202,5 @@ const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_mpg123_reframe_register(G
 #include "filter_register.h"
 __attribute__((constructor))
 void register_mpg123_reframe(void) {
-    gf_filter_auto_register("mpg123_reframe", dynCall_mpg123_reframe_register);
+    gf_filter_auto_register("mpg123_reframe", mpg123_reframe_register);
 }

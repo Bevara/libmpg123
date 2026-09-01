@@ -201,7 +201,7 @@ GF_FilterRegister Mpg123DecoderRegister = {
 	.process = mpg123dec_process,
 };
 
-const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_mpg123dec_register(GF_FilterSession *session)
+const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE mpg123dec_register(GF_FilterSession *session)
 {
 	return &Mpg123DecoderRegister;
 }
@@ -209,5 +209,5 @@ const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_mpg123dec_register(GF_Fil
 #include "filter_register.h"
 __attribute__((constructor))
 void register_mpg123dec(void) {
-    gf_filter_auto_register("mpg123dec", dynCall_mpg123dec_register);
+    gf_filter_auto_register("mpg123dec", mpg123dec_register);
 }
