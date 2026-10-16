@@ -16,6 +16,10 @@
       "mp2" : "audio",
       "mp1" : "audio"
     },
-    "licence_required":false,
-    "using": ["solver_minimal_1", "solver_1"]
+    "using": ["solver_minimal_1", "solver_1"],
+    "patents": {
+        "status": "expired",
+        "note": "MPEG audio layers 1-3, 2017",
+        "checked": "2026-10-16"
+    }
 }
