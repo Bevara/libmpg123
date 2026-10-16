@@ -1,5 +1,6 @@
 {
     "name": "libmpg123",
+    "version": "1.0.1",
     "description": "MP3 audio decoder",
     "filters":["mpg123dec","rfmpg123"],
     "help": "This filter decodes MPEG-1/2 audio (MP3) files using mpg123.",
