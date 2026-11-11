@@ -2,22 +2,32 @@
     "name": "libmpg123",
     "version": "1.0.2",
     "description": "MP3 audio decoder",
-    "filters":["mpg123dec","rfmpg123"],
+    "filters": [
+        "mpg123dec",
+        "rfmpg123"
+    ],
     "help": "This filter decodes MPEG-1/2 audio (MP3) files using mpg123.",
     "support": [
         "audio"
     ],
-    "sources":"https://bevara.ddns.net/sources/libmpg123.accessor",
-    "filter_source":{
-        "mpg123dec" : "dec_mpg123.c",
-        "rfmpg123" : "reframe_mpg123.c"
+    "sources": "https://bevara.ddns.net/sources/libmpg123.accessor",
+    "filter_source": {
+        "mpg123dec": "dec_mpg123.c",
+        "rfmpg123": "reframe_mpg123.c"
     },
-    "extension":{
-      "mp3" : "audio",
-      "mp2" : "audio",
-      "mp1" : "audio"
+    "extension": {
+        "mp3": "audio",
+        "mp2": "audio",
+        "mp1": "audio"
     },
-    "using": ["mm_solver_minimal_1.0.1", "mm_solver_1.0.1", "mm_solver_1.0.2", "mm_solver_1.0.3", "mm_solver_1.0.4"],
+    "using": [
+        "mm_solver_minimal_1.0.1",
+        "mm_solver_1.0.1",
+        "mm_solver_1.0.2",
+        "mm_solver_1.0.3",
+        "mm_solver_1.0.4",
+        "mm_solver_1.0.5"
+    ],
     "patents": {
         "status": "expired",
         "note": "MPEG audio layers 1-3, 2017",
